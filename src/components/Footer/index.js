@@ -1,19 +1,14 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import Logo from '../../assets/img/Logo.png';
 import { FooterBase } from './styles';
 
 function Footer() {
   return (
     <FooterBase>
-      <a href="/">
-        
-      </a>
-      <p>
-        Orgulhosamente criado durante a
-        {' '}
-        <a href="/">
-          Imersão React
-        </a>
-      </p>
+      <Link to="/">
+          <img className="Logo" src={Logo} alt="Logo Bravo!" />
+      </Link>
     </FooterBase>
   );
 }
